@@ -6,7 +6,7 @@
     <div class="contrainer">
         <div class="row">
             @foreach ($trains as $train )
-                <div class="col3">
+                <div class="col-3 mb-4">
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">{{$train->azienda}}</h5>
@@ -26,5 +26,4 @@
             @endforeach
         </div>
     </div>
-    @dump($trains)
 @endsection
