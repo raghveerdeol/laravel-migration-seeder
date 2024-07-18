@@ -14,4 +14,10 @@ class TrainController extends Controller
 
         return view('trains.index', compact('trains'));
     }
+
+    public function today(){
+        $trains = Train::all()->where('data', '=', '2024-07-19');
+
+        return view('pages.home', compact('trains'));
+    }
 }
